@@ -1,12 +1,13 @@
-﻿# Carpenter's Blocks Language File = ČESKÁ REPUBLIKA ČEŠTINA
-
+﻿
 # CREATIVE TAB
 itemGroup.carpentersBlocks.name=Carpenter's Blocks
 
 # ITEMS
 item.itemCarpentersHammer.name=Tesařovo kladivo
 item.itemCarpentersChisel.name=Tesařovo dláto
+item.itemCarpentersWrench.name=Carpenter's Wrench
 item.itemCarpentersDoor.name=Tesařovy dveře
+item.itemCarpentersDoorPart.name=Tesařovy dveře blok
 item.itemCarpentersBed.name=Tesařova postel
 item.itemCarpentersTile.name=Tesařova dlaždice
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=Tesařovo tlačítko
 tile.blockCarpentersDaylightSensor.name=Tesařův denní senzor
 tile.blockCarpentersCollapsibleBlock.name=Tesařův skládací blok
 tile.blockCarpentersDoor.name=Tesařovy dveře
+tile.blockCarpentersDoorPart.name=Tesařovy dveře blok
 tile.blockCarpentersGarageDoor.name=Tesařovy garážové dveře
 tile.blockCarpentersGate.name=Tesařova brána
 tile.blockCarpentersHatch.name=Tesařův poklop
@@ -57,4 +59,3 @@ message.sensitivity_sleep.name=SENZITIVITA: Přepíná dobu, kdy se hráč probu
 message.sensitivity_monsters.name=SENZITIVITA: Přepíná hodnotu světla, při které se rodí přišery (včetně bouřek).
 message.sensitivity_dynamic.name=SENZITIVITA: Ruditový výstup se mění podle pozice slunce na obloze.
 
-# </file>

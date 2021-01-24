@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 item.itemCarpentersHammer.name=Snickarens Hammare
 item.itemCarpentersChisel.name=Snickarens Stämjärn
 item.itemCarpentersDoor.name=Snickarens Dörr
+item.itemCarpentersDoorPart.name=Snickarens Dörr Part
 item.itemCarpentersBed.name=Snickarens Säng
 item.itemCarpentersTile.name=Snickarens Kakelplatta
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=Snickarens Knapp
 tile.blockCarpentersDaylightSensor.name=Snickarens Ljussensor
 tile.blockCarpentersCollapsibleBlock.name=Snickarens Hopfällbara Block
 tile.blockCarpentersDoor.name=Snickarens Dörr
+tile.blockCarpentersDoorPart.name=Snickarens Dörr Part
 tile.blockCarpentersGate.name=Snickarens Grind
 tile.blockCarpentersHatch.name=Snickarens Lucka
 tile.blockCarpentersLadder.name=Snickarens Stege

@@ -1,9 +1,9 @@
 buildscript {
     repositories {
-        mavenCentral()
+        maven { url = "https://repo1.maven.org/maven2/" }
         maven {
             name = "forge"
-            url = "http://files.minecraftforge.net/maven"
+            url = "https://files.minecraftforge.net/maven"
         }
         maven {
             name = "sonatype"
@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "3.3.8.2"
+version = "3.3.10"
 group= "com.carpentersblocks" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "Carpenter's Blocks"
 

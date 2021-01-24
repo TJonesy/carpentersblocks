@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Stumpcutter's Chunks
 item.itemCarpentersHammer.name=Stumpcutter's Thumper
 item.itemCarpentersChisel.name=Stumpcutter's Cutter
 item.itemCarpentersDoor.name=Stumpcutter's Door
+item.itemCarpentersDoorPart.name=Stumpcutter's Door Part
 item.itemCarpentersBed.name=Stumpcutter's Bunk
 item.itemCarpentersTile.name=Stumpcutter's Shiny Plate
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=Stumpcutter's Knob
 tile.blockCarpentersDaylightSensor.name=Stumpcutter's Stump 'o Meter
 tile.blockCarpentersCollapsibleBlock.name=Stumpcutter's Sinkin' Chunk
 tile.blockCarpentersDoor.name=Stumpcutter's Door
+tile.blockCarpentersDoorPart.name=Stumpcutter's Door Part
 tile.blockCarpentersGate.name=Stumpcutter's Picket Gate
 tile.blockCarpentersHatch.name=Stumpcutter's Hatch
 tile.blockCarpentersLadder.name=Stumpcutter's Riggin'

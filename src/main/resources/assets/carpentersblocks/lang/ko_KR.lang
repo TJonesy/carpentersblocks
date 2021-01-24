@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 item.itemCarpentersHammer.name=목수의 망치
 item.itemCarpentersChisel.name=목수의 징
 item.itemCarpentersDoor.name=목수의 문
+item.itemCarpentersDoorPart.name=목수의 문 Part
 item.itemCarpentersBed.name=목수의 침대
 item.itemCarpentersTile.name=목수의 타일
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=목수의 버튼
 tile.blockCarpentersDaylightSensor.name=목수의 햇빛 감지기
 tile.blockCarpentersCollapsibleBlock.name=목수의 기울어진 블럭
 tile.blockCarpentersDoor.name=목수의 문
+tile.blockCarpentersDoorPart.name=목수의 문 Part
 tile.blockCarpentersGate.name=목수의 게이트
 tile.blockCarpentersHatch.name=목수의 다락문
 tile.blockCarpentersLadder.name=목수의 사다리

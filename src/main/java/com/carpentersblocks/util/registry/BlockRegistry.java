@@ -15,6 +15,7 @@ import com.carpentersblocks.block.BlockCarpentersButton;
 import com.carpentersblocks.block.BlockCarpentersCollapsibleBlock;
 import com.carpentersblocks.block.BlockCarpentersDaylightSensor;
 import com.carpentersblocks.block.BlockCarpentersDoor;
+import com.carpentersblocks.block.BlockCarpentersDoorPart;
 import com.carpentersblocks.block.BlockCarpentersFlowerPot;
 import com.carpentersblocks.block.BlockCarpentersGarageDoor;
 import com.carpentersblocks.block.BlockCarpentersGate;
@@ -35,6 +36,7 @@ import com.carpentersblocks.renderer.BlockHandlerCarpentersButton;
 import com.carpentersblocks.renderer.BlockHandlerCarpentersCollapsibleBlock;
 import com.carpentersblocks.renderer.BlockHandlerCarpentersDaylightSensor;
 import com.carpentersblocks.renderer.BlockHandlerCarpentersDoor;
+import com.carpentersblocks.renderer.BlockHandlerCarpentersDoorPart;
 import com.carpentersblocks.renderer.BlockHandlerCarpentersFlowerPot;
 import com.carpentersblocks.renderer.BlockHandlerCarpentersGarageDoor;
 import com.carpentersblocks.renderer.BlockHandlerCarpentersGate;
@@ -64,6 +66,7 @@ public class BlockRegistry {
     public static Block blockCarpentersCollapsibleBlock;
     public static Block blockCarpentersDaylightSensor;
     public static Block blockCarpentersDoor;
+    public static Block blockCarpentersDoorPart;
     public static Block blockCarpentersFlowerPot;
     public static Block blockCarpentersGarageDoor;
     public static Block blockCarpentersGate;
@@ -85,6 +88,7 @@ public class BlockRegistry {
     public static int carpentersCollapsibleBlockRenderID;
     public static int carpentersDaylightSensorRenderID;
     public static int carpentersDoorRenderID;
+    public static int carpentersDoorPartRenderID;
     public static int carpentersFlowerPotRenderID;
     public static int carpentersGarageDoorRenderID;
     public static int carpentersGateRenderID;
@@ -105,6 +109,7 @@ public class BlockRegistry {
     public static boolean enableCollapsibleBlock = true;
     public static boolean enableDaylightSensor   = true;
     public static boolean enableDoor             = true;
+    public static boolean enableDoorPart         = true;
     public static boolean enableFlowerPot        = true;
     public static boolean enableGarageDoor       = true;
     public static boolean enableGate             = true;
@@ -126,6 +131,7 @@ public class BlockRegistry {
     public static int recipeQuantityCollapsibleBlock = 9;
     public static int recipeQuantityDaylightSensor   = 1;
     public static int recipeQuantityDoor             = 1;
+    public static int recipeQuantityDoorPart         = 2;
     public static int recipeQuantityFlowerPot        = 1;
     public static int recipeQuantityGarageDoor       = 8;
     public static int recipeQuantityGate             = 1;
@@ -149,6 +155,7 @@ public class BlockRegistry {
         enableCollapsibleBlock = config.get("blocks", "Enable Collapsible Block", enableCollapsibleBlock).getBoolean(enableCollapsibleBlock);
         enableDaylightSensor   = config.get("blocks",   "Enable Daylight Sensor",   enableDaylightSensor).getBoolean(enableDaylightSensor);
         enableDoor             = config.get("blocks",              "Enable Door",             enableDoor).getBoolean(enableDoor);
+        enableDoorPart         = config.get("blocks",         "Enable Door Part",         enableDoorPart).getBoolean(enableDoorPart);
         enableFlowerPot        = config.get("blocks",        "Enable Flower Pot",        enableFlowerPot).getBoolean(enableFlowerPot);
         enableGarageDoor       = config.get("blocks",       "Enable Garage Door",       enableGarageDoor).getBoolean(enableGarageDoor);
         enableGate             = config.get("blocks",              "Enable Gate",             enableGate).getBoolean(enableGate);
@@ -168,6 +175,7 @@ public class BlockRegistry {
         recipeQuantityCollapsibleBlock = config.get("recipe quantities", "Collapsible Block", recipeQuantityCollapsibleBlock).getInt(recipeQuantityCollapsibleBlock);
         recipeQuantityDaylightSensor   = config.get("recipe quantities",   "Daylight Sensor",   recipeQuantityDaylightSensor).getInt(recipeQuantityDaylightSensor);
         recipeQuantityDoor             = config.get("recipe quantities",              "Door",             recipeQuantityDoor).getInt(recipeQuantityDoor);
+        recipeQuantityDoorPart         = config.get("recipe quantities",         "Door Part",         recipeQuantityDoorPart).getInt(recipeQuantityDoorPart);
         recipeQuantityFlowerPot        = config.get("recipe quantities",        "Flower Pot",        recipeQuantityFlowerPot).getInt(recipeQuantityFlowerPot);
         recipeQuantityGarageDoor       = config.get("recipe quantities",       "Garage Door",       recipeQuantityGarageDoor).getInt(recipeQuantityGarageDoor);
         recipeQuantityGate             = config.get("recipe quantities",              "Gate",             recipeQuantityGate).getInt(recipeQuantityGate);
@@ -238,6 +246,10 @@ public class BlockRegistry {
             if (enableDoor) {
                 carpentersDoorRenderID = RenderingRegistry.getNextAvailableRenderId();
                 RenderingRegistry.registerBlockHandler(carpentersDoorRenderID, new BlockHandlerCarpentersDoor());
+            }
+            if (enableDoorPart) {
+                carpentersDoorPartRenderID = RenderingRegistry.getNextAvailableRenderId();
+                RenderingRegistry.registerBlockHandler(carpentersDoorPartRenderID, new BlockHandlerCarpentersDoorPart());
             }
             if (enableBed) {
                 carpentersBedRenderID = RenderingRegistry.getNextAvailableRenderId();
@@ -349,6 +361,21 @@ public class BlockRegistry {
              */
             GameRegistry.registerBlock(blockCarpentersDoor, "blockCarpentersDoor");
             Blocks.fire.setFireInfo(blockCarpentersDoor, 5, 20);
+        }
+
+        if (enableDoorPart) {
+            blockCarpentersDoorPart = new BlockCarpentersDoorPart(Material.wood)
+                    .setBlockName("blockCarpentersDoorPart")
+                    .setHardness(0.2F)
+                    .setStepSound(BlockProperties.stepSound);
+
+            /*
+             * This must be set to assign burn properties to block.
+             * A side-effect of this is that mods like NEI will enable
+             * users to place the block itself, which will result in a crash.
+             */
+            GameRegistry.registerBlock(blockCarpentersDoorPart, "blockCarpentersDoorPart");
+            Blocks.fire.setFireInfo(blockCarpentersDoorPart, 5, 20);
         }
 
         if (enableFlowerPot) {

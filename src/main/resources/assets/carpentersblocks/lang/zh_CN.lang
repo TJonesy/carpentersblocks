@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 item.itemCarpentersHammer.name=木匠锤
 item.itemCarpentersChisel.name=木匠凿
 item.itemCarpentersDoor.name=木匠门
+item.itemCarpentersDoorPart.name=木匠门 Part
 item.itemCarpentersBed.name=木匠床
 item.itemCarpentersTile.name=木匠瓷砖
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=木匠按钮
 tile.blockCarpentersDaylightSensor.name=木匠阳光传感器
 tile.blockCarpentersCollapsibleBlock.name=木匠折叠方块
 tile.blockCarpentersDoor.name=木匠门
+tile.blockCarpentersDoorPart.name=木匠门 Part
 tile.blockCarpentersGarageDoor.name=木匠卷闸门
 tile.blockCarpentersGate.name=木匠栅栏门
 tile.blockCarpentersHatch.name=木匠活板门

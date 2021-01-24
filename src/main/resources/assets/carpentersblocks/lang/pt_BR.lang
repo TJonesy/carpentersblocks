@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 item.itemCarpentersHammer.name=Martelo do Carpinteiro
 item.itemCarpentersChisel.name=Cinzel do Carpinteiro
 item.itemCarpentersDoor.name=Porta do Carpinteiro
+item.itemCarpentersDoorPart.name=Porta do Carpinteiro Part
 item.itemCarpentersBed.name=Cama do Carpinteiro
 item.itemCarpentersTile.name=Ladrilho do Carpinteiro
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=Botão do Carpinteiro
 tile.blockCarpentersDaylightSensor.name=Sensor de Luz Solar do Carpinteiro
 tile.blockCarpentersCollapsibleBlock.name=Bloco Desmontável do Carpinteiro
 tile.blockCarpentersDoor.name=Porta do Carpinteiro
+tile.blockCarpentersDoorPart.name=Porta do Carpinteiro Part
 tile.blockCarpentersGate.name=Portão do Carpinteiro
 tile.blockCarpentersHatch.name=Alçapão do Carpinteiro
 tile.blockCarpentersLadder.name=Escada do Carpinteiro

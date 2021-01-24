@@ -6,7 +6,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 # ITEMS
 item.itemCarpentersHammer.name=Młotek cieśli
 item.itemCarpentersChisel.name=Dłuto cieśli
-item.itemCarpentersDoor.name=Ciesielskie drzwi
+item.itemCarpentersDoorPart.name=Ciesielskie drzwi Part
 item.itemCarpentersBed.name=Ciesielskie łóżko
 
 # BLOCKS
@@ -16,6 +16,7 @@ tile.blockCarpentersBlock.name=Ciesielski blok
 tile.blockCarpentersButton.name=Ciesielski przycisk
 tile.blockCarpentersDaylightSensor.name=Ciesielski czujnik światła
 tile.blockCarpentersDoor.name=Ciesielskie drzwi
+tile.blockCarpentersDoorPart.name=Ciesielskie drzwi Part
 tile.blockCarpentersGate.name=Ciesielska furtka
 tile.blockCarpentersHatch.name=Ciesielske klapa
 tile.blockCarpentersLadder.name=Ciesielske drabina

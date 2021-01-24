@@ -27,6 +27,7 @@ import net.minecraftforge.event.world.BlockEvent;
 import com.carpentersblocks.CarpentersBlocks;
 import com.carpentersblocks.api.ICarpentersChisel;
 import com.carpentersblocks.api.ICarpentersHammer;
+import com.carpentersblocks.api.ICarpentersWrench;
 import com.carpentersblocks.block.BlockCoverable;
 import com.carpentersblocks.network.PacketActivateBlock;
 import com.carpentersblocks.network.PacketSlopeSelect;
@@ -86,7 +87,7 @@ public class EventHandler {
         }
 
         if (event.block instanceof BlockCoverable) {
-            if (entityPlayer.capabilities.isCreativeMode && (item instanceof ICarpentersHammer || item instanceof ICarpentersChisel)) {
+            if (entityPlayer.capabilities.isCreativeMode && (item instanceof ICarpentersHammer || item instanceof ICarpentersChisel || item instanceof ICarpentersWrench)) {
                 event.setCanceled(true);
             }
         }
@@ -125,7 +126,7 @@ public class EventHandler {
 
             switch (event.action) {
                 case LEFT_CLICK_BLOCK:
-                    boolean toolEquipped = itemStack != null && (itemStack.getItem() instanceof ICarpentersHammer || itemStack.getItem() instanceof ICarpentersChisel);
+                    boolean toolEquipped = itemStack != null && (itemStack.getItem() instanceof ICarpentersHammer || itemStack.getItem() instanceof ICarpentersChisel || itemStack.getItem() instanceof ICarpentersWrench);
 
                     /*
                      * Creative mode doesn't normally invoke onBlockClicked(), but rather it tries

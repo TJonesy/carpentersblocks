@@ -32,8 +32,11 @@ public class IconRegistry {
     public static IIcon icon_door_glass_tall_top;
     public static IIcon icon_door_glass_tall_bottom;
     public static IIcon icon_door_glass_top;
+    public static IIcon icon_door_glass_middle;
     public static IIcon icon_door_french_glass_top;
     public static IIcon icon_door_french_glass_bottom;
+    public static IIcon icon_door_french_glass_middle;
+    public static IIcon icon_door_french_glass;
     public static IIcon icon_hatch_french_glass;
     public static IIcon icon_hatch_glass;
     public static IIcon icon_hatch_screen;

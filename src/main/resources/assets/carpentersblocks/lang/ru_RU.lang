@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 item.itemCarpentersHammer.name=Молоток плотника
 item.itemCarpentersChisel.name=Стамеска плотника
 item.itemCarpentersDoor.name=Дверь плотника
+item.itemCarpentersDoorPart.name=Дверь плотника Part
 item.itemCarpentersBed.name=Кровать плотника
 item.itemCarpentersTile.name=Плитка плотника
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=Кнопка плотника
 tile.blockCarpentersDaylightSensor.name=Датчик дневного света плотника
 tile.blockCarpentersCollapsibleBlock.name=Складной блок плотника
 tile.blockCarpentersDoor.name=Дверь плотника
+tile.blockCarpentersDoorPart.name=Дверь плотника Part
 tile.blockCarpentersGarageDoor.name=Раздвижная дверь плотника
 tile.blockCarpentersGate.name=Калитка плотника
 tile.blockCarpentersHatch.name=Люк плотника

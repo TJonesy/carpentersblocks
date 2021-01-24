@@ -31,6 +31,7 @@ import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.util.ForgeDirection;
 import com.carpentersblocks.api.ICarpentersChisel;
 import com.carpentersblocks.api.ICarpentersHammer;
+import com.carpentersblocks.api.ICarpentersWrench;
 import com.carpentersblocks.api.IWrappableBlock;
 import com.carpentersblocks.renderer.helper.ParticleHelper;
 import com.carpentersblocks.renderer.helper.RoutableFluidsHelper;
@@ -422,6 +423,13 @@ public class BlockCoverable extends BlockContainer {
                             if (onChiselClick(TE, effectiveSide, false)) {
                                 actionResult.setAltered();
                             }
+                        }
+
+                    } else if (ItemRegistry.enableWrench && itemStack.getItem() instanceof ICarpentersWrench && ((ICarpentersWrench)itemStack.getItem()).canUseWrench(world, entityPlayer)) {
+
+                        System.out.println("Wrench activated " + x + ":" + y + ":" + z + "," + hitX + ":" + hitY + ":" + hitZ );
+                        if (onWrenchClick(TE, entityPlayer, hitX, hitY, hitZ)) {
+                            actionResult.setAltered();
                         }
 
                     } else if (FeatureRegistry.enableCovers && BlockProperties.isCover(itemStack)) {
@@ -1390,6 +1398,11 @@ public class BlockCoverable extends BlockContainer {
     }
 
     protected boolean onHammerRightClick(TEBase TE, EntityPlayer entityPlayer)
+    {
+        return false;
+    }
+
+    protected boolean onWrenchClick(TEBase TE, EntityPlayer entityPlayer, float hitX, float hitY, float hitZ)
     {
         return false;
     }

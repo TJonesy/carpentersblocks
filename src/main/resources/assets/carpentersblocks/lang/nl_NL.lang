@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 item.itemCarpentersHammer.name=Timmermans Hamer
 item.itemCarpentersChisel.name=Timmermans Beitel
 item.itemCarpentersDoor.name=Timmermans Deur
+item.itemCarpentersDoorPart.name=Timmermans Deur Part
 item.itemCarpentersBed.name=Timmermans Bed
 item.itemCarpentersTile.name=Timmermans Tegel
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=Timmermans Knop
 tile.blockCarpentersDaylightSensor.name=Timmermans Daglicht Sensor
 tile.blockCarpentersCollapsibleBlock.name=Inzakbare Timmermans Blok
 tile.blockCarpentersDoor.name=Timmermans Deur
+tile.blockCarpentersDoorPart.name=Timmermans Deur Part
 tile.blockCarpentersGate.name=Timmermans Poort
 tile.blockCarpentersHatch.name=Timmermans Luik
 tile.blockCarpentersLadder.name=Timmermans Ladder

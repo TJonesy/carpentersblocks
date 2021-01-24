@@ -7,6 +7,7 @@ itemGroup.carpentersBlocks.name=Carpenter's Blocks
 item.itemCarpentersHammer.name=Hammer des Zimmermanns
 item.itemCarpentersChisel.name=Meißel des Zimmermanns
 item.itemCarpentersDoor.name=Tür des Zimmermanns
+item.itemCarpentersDoorPart.name=Tür des Zimmermanns Part
 item.itemCarpentersBed.name=Bett des Zimmermanns
 item.itemCarpentersTile.name=Fliese des Zimmermanns
 
@@ -18,6 +19,7 @@ tile.blockCarpentersButton.name=Knopf des Zimmermanns
 tile.blockCarpentersDaylightSensor.name=Tageslichtsensor des Zimmermanns
 tile.blockCarpentersCollapsibleBlock.name=Zusammenklappbarer Block des Zimmermanns
 tile.blockCarpentersDoor.name=Tür des Zimmermanns
+tile.blockCarpentersDoorPart.name=Tür des Zimmermanns Part
 tile.blockCarpentersGarageDoor.name=Garagentür des Zimmermanns
 tile.blockCarpentersGate.name=Zauntor des Zimmermanns
 tile.blockCarpentersHatch.name=Luke des Zimmermanns
